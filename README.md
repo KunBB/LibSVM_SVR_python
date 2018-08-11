@@ -71,4 +71,4 @@ iter:  2458
  =================
 obj =  [[-2231.71390416]] , rho =  [[ 2.54547925]]
 nSV= 17 	 nBSV= 2
-![Loading...](https://raw.githubusercontent.com/KunBB/MarkdownPhotos/master/PNPNPCNPhard/1.jpg)
+![Loading...](https://raw.githubusercontent.com/KunBB/LibSVM_SVR_python/master/Example/Figure_1.png)
