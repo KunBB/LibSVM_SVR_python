@@ -1,7 +1,9 @@
 Use Python to reappear the epsilon-SVR function in LibSVM. The svr.py does not
 contain shrink function in LibSVM. The svr_shrinking.py adds shrink function to
 the svr.py (however, some functions may still be problematic).  
-The detailed analysis of the SVR program in LIBSVM could be seen in http://xuyunkun.com.  
+
+The detailed analysis of the SVR program in LIBSVM could be seen in https://xuyunkun.com.  
+
 LIBSVM links: https://www.csie.ntu.edu.tw/~cjlin/libsvm/.
 ---
 
@@ -11,8 +13,19 @@ numpy
 # Usage
 * Train:
 ```python
-clf = svr.svm_train(x_tra, y_tra, 0.1, 150)
-```
+clf = svr.svm_train(dataMatIn, labelMat, epsilon_svr, C, eps=1e-3, kernel_type='rbf', degree=3, gamma=0.1, coef0=0.0)
+```  
+|Parameter|Interpretation|
+|:-:|:-:|
+|dataMatIn|Training vectors|
+|labelMat|Target values|
+|epsilon_svr|The interval width parameter in SVR|
+|C|Penalty parameter C of the error term|
+|eps|Tolerance for stopping criterion|
+|kernel_type|Specifies the kernel type to be used in the algorithm. It must be one of 'linear', 'poly', 'rbf', 'sigmoid', 'laplacian' or 'morlet'. |
+|degree|Kernel coefficient for 'poly'|
+|gamma|Kernel coefficient for 'rbf', 'poly', 'sigmoid' and 'laplacian'|
+|coef0|Kernel coefficient for 'poly' and 'sigmoid'|
 
 * Predict
 ```python
@@ -67,7 +80,7 @@ plt.show()
 **The results of the program are as follows:**  
 Gmax+Gmax2:  [[ 0.00086194]]  
 Gmax+Gmax2:  [[ 0.00086194]]  
-****break****  
+\*\*\*\*break\*\*\*\*  
 iter:  2458  
  \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
 obj =  [[-2231.71390416]] , rho =  [[ 2.54547925]]  
