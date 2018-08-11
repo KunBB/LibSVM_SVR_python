@@ -2,10 +2,8 @@ Use Python to reappear the epsilon-SVR function in LibSVM. The svr.py does not
 contain shrink function in LibSVM. The svr_shrinking.py adds shrink function to
 the svr.py (however, some functions may still be problematic).  
 
-The detailed analysis of the SVR program in LIBSVM could be seen in https://xuyunkun.com.  
+The detailed analysis of the SVR program in LIBSVM could be seen in https://xuyunkun.com/2018/01/30/libsvm%20SVR%E9%83%A8%E5%88%86%E8%AF%A6%E8%A7%A3/#more.  
 
-LIBSVM links: https://www.csie.ntu.edu.tw/~cjlin/libsvm/.
----
 
 # Dependencies
 numpy
@@ -16,7 +14,7 @@ numpy
 clf = svr.svm_train(dataMatIn, labelMat, epsilon_svr, C, eps=1e-3, kernel_type='rbf', degree=3, gamma=0.1, coef0=0.0)
 ```  
 |Parameter|Interpretation|
-|:-:|:-:|
+|:-:|:-|
 |dataMatIn|Training vectors|
 |labelMat|Target values|
 |epsilon_svr|The interval width parameter in SVR|
@@ -33,7 +31,7 @@ y_pre = []
 for i in range(x_tra.shape[0]):
     y_pre.append(svm.svm_predict(clf, x_pre[i,:])) # The predict function can only predict a set of data.
 ```
----
+
 
 # Example
 The artificial function is taken as an example to test the algorithm.
