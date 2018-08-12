@@ -57,7 +57,7 @@ x_tra = np.mat(x_tra).reshape(-1,1)
 y_tra = np.mat(y_tra).reshape(-1,1)
 
 # sklearn.svm.SVR
-clf_l = svm.SVR(C=150)
+clf_l = svm.SVR(C=150, gamma=0.1)
 clf_l.fit(x_tra, y_tra)
 y_pre_l = clf_l.predict(x_tra)
 rmse_l = Error(y_tra, y_pre_l)
