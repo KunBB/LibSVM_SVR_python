@@ -88,11 +88,11 @@ plt.legend(['Training samples','Real curve','sklearn.svm.SVR: RMSE='+str(rmse_l)
 plt.show()
 ```
 **The results of the program are as follows:**  
-Gmax+Gmax2:  [[ 0.0008514]]
-Gmax+Gmax2:  [[ 0.0008514]]
-\*\*\*\*break\*\*\*\*
-iter:  5004
- \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=
-obj =  [[-6272.41495558]] , rho =  [[-3.09014393]]
+Gmax+Gmax2:  [[ 0.0008514]]  
+Gmax+Gmax2:  [[ 0.0008514]]  
+\*\*\*\*break\*\*\*\*  
+iter:  5004  
+ \=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
+obj =  [[-6272.41495558]] , rho =  [[-3.09014393]]  
 nSV= 21 	 nBSV= 1
 ![Loading...](https://raw.githubusercontent.com/KunBB/LibSVM_SVR_python/master/Example/Figure_1.png)
